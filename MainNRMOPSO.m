@@ -1,7 +1,8 @@
 clc;
 clear ;
 % 将 "MATLAB:divideByZero" 警告的显示设置为 "off"
-addpath('C:\Users\ll\Desktop\程序代码\multimodal个人实验代码\utils');
+addpath('..\utils');
+addpath('..\data');
 warning('off')
 DataSets = {'wdbc','musk1','ionosphere'};
 Algorithms={'NRMOPSO'};
