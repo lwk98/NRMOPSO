@@ -5,7 +5,7 @@ function newparticle = mutation(particle,X,Y,threshold,sortedReilfF)
         needtoadd=sortedReilfF(1,1);
         particle.pos(needtoadd)=0.5 +0.3*rand;
       elseif numel(currentpos)==1
- % 优先去掉ReilfF中没有出现的值，再按顺序
+
         need2deletevar=currentpos(ismember(currentpos,sortedReilfF(:,1))==0); %找到没出现的值（是数组）
         if isempty(need2deletevar)  %需要删除的为0
           % 增加特征
